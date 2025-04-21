@@ -40,7 +40,7 @@
       margin: 0 auto;
       padding-bottom: 80px;
     }
-    .video-wrapper, .lead-form, .depoimentos, .bonus-section, .imagem-extra, .textos-dinamicos {
+    .video-wrapper, .lead-form, .depoimentos, .bonus-section, .imagem-extra, .persuasive-texts {
       margin: 40px 0;
     }
     iframe {
@@ -142,19 +142,6 @@
       margin: 20px 0;
       color: #00ffcc;
     }
-    .textos-dinamicos div {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px 0;
-      border-left: 5px solid #FFD700;
-      font-size: 1.1rem;
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
     footer {
       font-size: 0.8rem;
       text-align: center;
@@ -220,17 +207,15 @@
 
     <div class="lead-form">
       <h2>Receba o Método Exclusivo no Seu WhatsApp!</h2>
-      <input type="text" placeholder="Seu nome" required /><br />
-      <input type="email" placeholder="Seu e-mail" required /><br />
-      <input type="tel" placeholder="Seu WhatsApp" required /><br />
-      <button>QUERO COMEÇAR AGORA</button>
-    </div>
-
-    <div class="textos-dinamicos">
-      <div>💡 *Você está a um clique de transformar sua realidade financeira!* Descubra como brasileiros comuns estão fazendo dinheiro de verdade com apenas um celular e conexão à internet.</div>
-      <div>🔥 *Essa não é mais uma promessa vazia!* Já são mais de 4.000 alunos aplicando e faturando toda semana. O método funciona e está ao seu alcance agora.</div>
-      <div>🚀 *Você pode começar ainda hoje!* Sem precisar sair de casa, sem experiência anterior e com suporte completo. É a sua chance de mudar de vida!</div>
-      <div>💸 *Por apenas R$20*, você recebe um eBook com 15 ideias comprovadas para faturar até R$2.000 por semana. Isso é MENOS que uma pizza. Qual seu motivo pra não tentar?</div>
+      <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required /><br />
+        <input type="email" name="email" placeholder="Seu e-mail" required /><br />
+        <input type="tel" name="whatsapp" placeholder="Seu WhatsApp com DDD" required /><br />
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+        <input type="hidden" name="_subject" value="Novo lead capturado!">
+        <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve você receberá seu eBook exclusivo com as 15 ideias para ganhar até R$2.000 por semana. Fique atento ao seu WhatsApp e e-mail!">
+        <button type="submit">QUERO COMEÇAR AGORA</button>
+      </form>
     </div>
 
     <div class="bonus-section">
@@ -244,6 +229,17 @@
       </ul>
       <p><strong>De R$97 por apenas R$20</strong> – por tempo limitado!</p>
       <a class="cta-button" href="https://pay.hotmart.com/X97951507F" target="_blank">COMPRAR AGORA POR R$20</a>
+    </div>
+
+    <div class="persuasive-texts">
+      <h2>🚀 Você está a um clique de transformar sua semana!</h2>
+      <p>Imagine ganhar R$2.000 extras toda semana usando apenas o seu celular... Isso é o que centenas de pessoas comuns já estão fazendo com esse método simples.</p>
+
+      <h2>💼 Ideal para quem está cansado de promessas vazias</h2>
+      <p>Este não é mais um curso teórico. Você vai receber um eBook com 15 ideias práticas que funcionam mesmo sem experiência anterior!</p>
+
+      <h2>🎯 100% de satisfação ou seu dinheiro de volta</h2>
+      <p>Confiança total no conteúdo: se você aplicar e não funcionar, devolvemos seu investimento. Simples assim!</p>
     </div>
 
     <div class="depoimentos">
