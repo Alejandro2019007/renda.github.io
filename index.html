@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganhe R$2.000 por Semana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: url('https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg') center/cover no-repeat;
+      text-align: center;
+      padding: 60px 20px;
+      color: #FFD700;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: top 0.5s;
+      z-index: 10;
+    }
+    .hero h1 {
+      font-family: 'Impact', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #ff3333;
+    }
+    .content {
+      padding-top: 300px;
+      max-width: 90%;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+    .video-wrapper, .lead-form, .depoimentos, .bonus-section, .imagem-extra {
+      margin: 40px 0;
+    }
+    video {
+      width: 100%;
+      border: 3px solid #FFD700;
+      border-radius: 10px;
+    }
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+      z-index: 100;
+      animation: pulse 1.5s infinite;
+      font-size: 0.9rem;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .lead-form input, .lead-form button {
+      padding: 12px;
+      width: 100%;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    .lead-form button {
+      background: red;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .depoimentos div {
+      margin: 20px 0;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+      font-size: 0.95rem;
+    }
+    .bonus-section ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+    }
+    .bonus-section li::before {
+      content: "✅ ";
+    }
+    .cta-button {
+      display: inline-block;
+      background: #ff0000;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #FFD700;
+      transition: 0.3s;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .cta-button:hover {
+      background: #cc0000;
+    }
+    .imagem-extra img {
+      width: 100%;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .progress-bar-container {
+      width: 100%;
+      background: #444;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    .progress-bar {
+      width: 60%;
+      height: 20px;
+      background-color: #FFD700;
+      animation: grow 2s ease-in-out;
+    }
+    @keyframes grow {
+      from { width: 0; }
+      to { width: 60%; }
+    }
+    .countdown {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: #00ffcc;
+    }
+    footer {
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+  <script>
+    window.onscroll = function() {
+      const header = document.querySelector("header");
+      if (window.scrollY > 150) {
+        header.style.top = "-200px";
+      } else {
+        header.style.top = "0";
+      }
+    };
+
+    function startCountdown(duration) {
+      let timer = duration, minutes, seconds;
+      const countdownEl = document.getElementById('countdown');
+      setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        countdownEl.textContent = `Oferta termina em ${minutes}:${seconds}`;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      startCountdown(600);
+    };
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Descubra o Método Ilegalmente Simples</h1>
+    <p>Que o Banco NÃO Quer que Você Saiba para Gerar R$ 2.000 por Semana</p>
+  </header>
+
+  <div class="popup">3 pessoas estão vendo esta oferta AGORA!</div>
+
+  <div class="content">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+    <div class="imagem-extra">
+      <img src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg" alt="Carro de luxo" />
+      <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg" alt="Convincente" />
+    </div>
+
+    <div class="countdown" id="countdown">Oferta termina em 10:00</div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <div class="lead-form">
+      <h2>Receba o Método Exclusivo no Seu WhatsApp!</h2>
+      <input type="text" placeholder="Seu nome" required /><br />
+      <input type="email" placeholder="Seu e-mail" required /><br />
+      <input type="tel" placeholder="Seu WhatsApp" required /><br />
+      <button>QUERO COMEÇAR AGORA</button>
+    </div>
+
+    <div class="bonus-section">
+      <h2>O Que Você Vai Receber:</h2>
+      <ul>
+        <li>15 ideias testadas para ganhar até R$2.000 por semana</li>
+        <li>Funciona mesmo sem habilidades técnicas</li>
+        <li>Formato: eBook PDF prático e direto</li>
+        <li>Suporte e atualizações gratuitas</li>
+        <li>Bônus: acesso a grupo fechado com dicas exclusivas</li>
+      </ul>
+      <p><strong>De R$97 por apenas R$20</strong> – por tempo limitado!</p>
+      <a class="cta-button" href="https://pay.hotmart.com/X97951507F" target="_blank">COMPRAR AGORA POR R$20</a>
+    </div>
+
+    <div class="depoimentos">
+      <h2>O que estão dizendo:</h2>
+      <div><strong>Mariana (17 anos):</strong> “Fiz meu primeiro PIX de R$312 em 3 dias. É surreal!”</div>
+      <div><strong>Lucas (23 anos):</strong> “Mostrei pro meu pai e ele achou que era golpe. Depois viu R$ 2.020 na conta e pediu o link!”</div>
+      <div><strong>Ana (35 anos):</strong> “Finalmente larguei o segundo emprego. Só uso o método 2h por dia.”</div>
+      <div><strong>Renan (19 anos):</strong> “Comprei um notebook com o lucro da primeira semana.”</div>
+      <div><strong>Camila (45 anos):</strong> “Meus filhos nem acreditam que tô ganhando mais que o pai deles.”</div>
+    </div>
+  </div>
+
+  <footer>
+    Este site não se responsabiliza por resultados individuais. Você pode perder dinheiro se não seguir as etapas.
+  </footer>
+</body>
+</html>
