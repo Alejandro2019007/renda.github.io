@@ -40,26 +40,8 @@
       margin: 0 auto;
       padding-bottom: 80px;
     }
-    .video-wrapper, .lead-form, .depoimentos, .bonus-section, .imagem-extra {
+    .video-wrapper, .lead-form, .depoimentos, .bonus-section, .imagem-extra, .textos-dinamicos {
       margin: 40px 0;
-    }
-    .video-wrapper h2 {
-      text-align: center;
-      font-size: 1.5rem;
-      color: #FFD700;
-      margin-bottom: 10px;
-    }
-    .video-selo {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .video-selo span {
-      background-color: #00ffcc;
-      color: #111;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-size: 0.9rem;
-      font-weight: bold;
     }
     iframe {
       width: 100%;
@@ -160,6 +142,19 @@
       margin: 20px 0;
       color: #00ffcc;
     }
+    .textos-dinamicos div {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 5px solid #FFD700;
+      font-size: 1.1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     footer {
       font-size: 0.8rem;
       text-align: center;
@@ -210,8 +205,6 @@
 
   <div class="content">
     <div class="video-wrapper">
-      <h2>Assista ao vídeo até o final!</h2>
-      <div class="video-selo"><span>Prova Real • Vídeo Oficial</span></div>
       <iframe src="https://www.youtube.com/embed/R_MqwrhkKwg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
 
@@ -231,6 +224,13 @@
       <input type="email" placeholder="Seu e-mail" required /><br />
       <input type="tel" placeholder="Seu WhatsApp" required /><br />
       <button>QUERO COMEÇAR AGORA</button>
+    </div>
+
+    <div class="textos-dinamicos">
+      <div>💡 *Você está a um clique de transformar sua realidade financeira!* Descubra como brasileiros comuns estão fazendo dinheiro de verdade com apenas um celular e conexão à internet.</div>
+      <div>🔥 *Essa não é mais uma promessa vazia!* Já são mais de 4.000 alunos aplicando e faturando toda semana. O método funciona e está ao seu alcance agora.</div>
+      <div>🚀 *Você pode começar ainda hoje!* Sem precisar sair de casa, sem experiência anterior e com suporte completo. É a sua chance de mudar de vida!</div>
+      <div>💸 *Por apenas R$20*, você recebe um eBook com 15 ideias comprovadas para faturar até R$2.000 por semana. Isso é MENOS que uma pizza. Qual seu motivo pra não tentar?</div>
     </div>
 
     <div class="bonus-section">
